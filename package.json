@@ -16,7 +16,8 @@
     "test": "npx jest -i",
     "compile": "npx rimraf ./dist && npx tsc -p ./tsconfig.prod.json",
     "lint": "npx tsc -p ./tsconfig.json --noEmit && npx tslint -c ./tslint.json -p ./tsconfig.json",
-    "prepack": "npm run compile"
+    "prepack": "npm run compile",
+    "prepare": "npm run compile"
   },
   "repository": {
     "type": "git",
